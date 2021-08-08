@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background : rgba(33, 246, 214, 1);
+  background : linear-gradient(90deg, rgba(33, 246, 214, 1) 0%, rgba(85, 255, 214, 1) 50%, rgba(82, 252, 186, 1) 100%);
+}
+
+
+.main-section {
+  margin : 4rem;
+}
+
+.heading{
+  background: lightcyan;
+}
+
+.form-div{
+  margin: 2rem;
+}

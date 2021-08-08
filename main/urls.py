@@ -15,10 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
+
+from django.views.static import serve
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls', namespace='api')),
     path('frontend/', include('frontend.urls', namespace='frontend')),
+    url(r'^static/(?P<path>.*)$', server, {'document_root':settings.STATIC_ROOT})
+    url(r'^media/(?P<path>.*)$', server, {'document_root':settings.MEDIA_ROOT})
 ]
+
+
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
