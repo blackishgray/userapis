@@ -85,6 +85,7 @@ $(() => {
 		$.ajax({
 			method:"GET",
 			headers : {
+				'Content-Type': 'application/json',
 				'X-CSRFToken' : csrftoken,
 			},
 			url : url,
@@ -147,6 +148,7 @@ $(() => {
 
 		$.ajax({
 			headers: {
+				'Content-Type': 'application/json',
 				'X-CSRFToken' : csrftoken,
 			},
 			method:'POST',
