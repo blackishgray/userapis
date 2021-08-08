@@ -81,12 +81,17 @@ WSGI_APPLICATION = 'main.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'userapis',
-        'USER': 'postgres',
-        'PASSWORD':'postgres',
-        'HOST':'localhost',
+        'NAME': 'd5fskg6v5huqgg',
+        'USER': 'ffubyjdzbzgskl',
+        'PASSWORD':'b23a953de8cd6b6a9a68ea2f24f3be7550022ffc32ffd63a96d40158668634b9',
+        'HOST':'ec2-54-205-232-84.compute-1.amazonaws.com',
+        'PORT': 5432
     }
 }
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
