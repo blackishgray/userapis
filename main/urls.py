@@ -25,8 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls', namespace='api')),
     path('frontend/', include('frontend.urls', namespace='frontend')),
-    url(r'^static/(?P<path>.*)$', server, {'document_root':settings.STATIC_ROOT})
-    url(r'^media/(?P<path>.*)$', server, {'document_root':settings.MEDIA_ROOT})
+    url(r'^static/(?P<path>.*)$', serve, {'document_root':settings.STATIC_ROOT}),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT})
 ]
 
 
