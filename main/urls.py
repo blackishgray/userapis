@@ -24,7 +24,7 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls', namespace='api')),
-    path('frontend/', include('frontend.urls', namespace='frontend')),
+    path('', include('frontend.urls', namespace='frontend')),
     url(r'^static/(?P<path>.*)$', serve, {'document_root':settings.STATIC_ROOT}),
     url(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT})
 ]

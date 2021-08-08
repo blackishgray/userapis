@@ -24,6 +24,10 @@ def apiOverview(request):
         'userCreate' : '/user-create',
         'userUpdate' : '/user-update/<str:pk>',
         'userDelete' : '/user-delete/<str:pk>',
+        'userFilterFirstName':'/userFilterFirstName/<str:first_name>',
+        'userFilterLastName':'userFilterLasttName/<str:last_name>',
+        'userFilterAge':'userFilterAge/<str:age>',
+        'userFilterDob' : 'userFilterDob/<str:dob>'
     }
     return Response(api_urls)
 
