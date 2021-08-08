@@ -47,7 +47,7 @@ $(() => {
 
 	}
 
-	userslist()
+	userslist();
 
 
 	// filtering data 
@@ -69,17 +69,13 @@ $(() => {
 		// filter through data using that input
 		if (first_name){
 			url = `https://userapis.herokuapp.com/api/userFilterFirstName/${first_name}`
-			console.log(first_name)
 		} else if (last_name) {
 			url = `https://userapis.herokuapp.com/api/userFilterLastName/${last_name}`
-			console.log(last_name)
 		} else if (age){
 			url = `https://userapis.herokuapp.com/api/userFilterAge/${age}`
-			console.log(age)
 		} else if (dob) {
 			url = `https://userapis.herokuapp.com/api/userFilterDob/${dob}`
 			
-			console.log(dob)
 		}
 
 		$.ajax({
@@ -162,9 +158,7 @@ $(() => {
 			fail: ()=>{
 				console.log('Fail')
 			}
-
 		})
-
 	}
 
 	$('#submit-User').click(()=>{
