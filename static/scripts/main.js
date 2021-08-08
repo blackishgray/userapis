@@ -11,7 +11,7 @@ $(() => {
 		tableData.innerHTML = ''
 
 
-		let url = 'http://127.0.0.1:8000/api/usersList';
+		let url = 'https://userapis.herokuapp.com/api/api/usersList';
 		
 		// fetch promise for rendering 
 		// data from the api
@@ -68,16 +68,16 @@ $(() => {
 		// if one input is given then 
 		// filter through data using that input
 		if (first_name){
-			url = `http://127.0.0.1:8000/api/userFilterFirstName/${first_name}`
+			url = `https://userapis.herokuapp.com/api/userFilterFirstName/${first_name}`
 			console.log(first_name)
 		} else if (last_name) {
-			url = `http://127.0.0.1:8000/api/userFilterLastName/${last_name}`
+			url = `https://userapis.herokuapp.com/api/userFilterLastName/${last_name}`
 			console.log(last_name)
 		} else if (age){
-			url = `http://127.0.0.1:8000/api/userFilterAge/${age}`
+			url = `https://userapis.herokuapp.com/api/userFilterAge/${age}`
 			console.log(age)
 		} else if (dob) {
-			url = `http://127.0.0.1:8000/api/userFilterDob/${dob}`
+			url = `https://userapis.herokuapp.com/api/userFilterDob/${dob}`
 			
 			console.log(dob)
 		}
@@ -130,7 +130,7 @@ $(() => {
 		// console.log('heloe');
 
 		// url for create request
-		let url = 'http://127.0.0.1:8000/api/userCreate'
+		let url = 'https://userapis.herokuapp.com/api/userCreate'
 
 		let first_name = $('#form-first-name').val()
 		let last_name = $('#form-last-name').val()
