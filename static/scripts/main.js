@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(() => {
 
 	var tableData = document.getElementById('table-data')
