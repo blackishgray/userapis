@@ -9,7 +9,7 @@ $(() => {
 		tableData.innerHTML = ''
 
 
-		let url = 'https://userapis.herokuapp.com/api/api/usersList';
+		let url = 'https://userapis.herokuapp.com/api/usersList';
 		
 		// fetch promise for rendering 
 		// data from the api
